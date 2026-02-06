@@ -1,31 +1,35 @@
-.home .encabezado {
+/* FONDO GLOBAL */
+.home {
   position: relative;
   background-image: url('/images/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-
-  display: flex;
-  flex-direction: column;   /* centra vertical */
-  align-items: center;       /* centra horizontal */
-  text-align: center;
   overflow: hidden;
 }
 
 /* OVERLAY AZUL + BLUR */
-.home .encabezado::before {
-  content: "";
+.home::before {
+  content: '';
   position: absolute;
   inset: 0;
   background: rgba(0, 80, 200, 0.35);
   backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+/* CONTENIDO SOBRE EL OVERLAY */
+.home > * {
+  position: relative;
   z-index: 1;
 }
 
-/* Contenido encima del overlay */
-.home .encabezado > * {
-  position: relative;
-  z-index: 2;
+/* ENCABEZADO */
+.home .encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 /* TITULO */
@@ -33,7 +37,7 @@
   color: white;
   font-size: clamp(2.2rem, 5vw, 3.5rem);
   font-weight: 700;
-  text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
   margin: 0;
 }
 
@@ -43,7 +47,7 @@
 }
 
 /* BOTON */
-.home .encabezado .btn {
+.home .encabezado .btn-evo {
   margin-top: 25px;
   padding: 12px 28px;
   font-size: 1.1rem;
@@ -53,18 +57,24 @@
   border-radius: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* HOVER BOTON */
-.home .encabezado .btn:hover {
-  background-color: #ff8c00;
+.home .encabezado .btn-evo:hover {
+  background-color: orange;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 }
 
+/* LOGOS */
 .logos {
   display: flex;
   gap: 20px;
   margin-top: 40px;
+}
+
+/* CARDS */
+.plan-card {
+  margin-top: 30px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
 }
