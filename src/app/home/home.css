@@ -78,3 +78,107 @@
   border-radius: 20px;
   transition: transform 0.3s ease;
 }
+
+.sucursales {
+  position: relative;
+}
+
+.titulo {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.titulo span {
+  color: orange;
+}
+
+/* CARD */
+.sucursal-card {
+  position: relative;
+  height: 320px;
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.sucursal-card:hover {
+  transform: scale(1.02);
+}
+
+/* OVERLAY OSCURO */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.20);
+}
+
+/* TEXTO */
+.sucursal-card h3 {
+  position: relative;
+  color: white;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.sucursal-card h3 span {
+  color: orange;
+}
+
+.porque {
+  position: relative;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Overlay oscuro */
+.porque::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(3px);
+  z-index: 0;
+}
+
+/* Contenido encima */
+.porque > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* TITULO */
+.porque .titulo {
+  color: orange;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* SUBTITULO */
+.porque .subtitulo {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+}
+
+/* DESCRIPCIÓN */
+.porque .descripcion {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Palabras naranja */
+.porque span {
+  color: orange;
+  font-weight: 600;
+}

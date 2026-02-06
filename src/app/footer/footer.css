@@ -1,0 +1,77 @@
+.footer {
+  background: rgb(0, 71, 146);
+  color: white;
+}
+
+.footer h4,
+.footer h5 {
+  color: orange;
+  font-weight: 700;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: orange;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* CÍRCULO */
+.icono-red {
+  width: 48px;
+  height: 48px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+/* LOGO */
+.icono-red img {
+  width: 30px;
+}
+
+/* HOVER */
+.icono-red:hover {
+  background: orange;
+  transform: scale(1.1);
+}
+
+
+hr {
+  border-color: rgba(255,255,255,0.2);
+}
+
+.copyright {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 12px 40px; /* vertical horizontal */
+  justify-content: center;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: orange;
+}
