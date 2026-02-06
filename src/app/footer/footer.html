@@ -1,50 +1,49 @@
 <footer class="footer">
-  <div class="container py-5">
-    <div class="row text-center text-md-start">
+  <div class="container">
+    <div class="footer-grid">
 
-      <!-- LOGO / MARCA -->
-      <div class="col-md-4 mb-4">
-        <h4 class="marca">EVO</h4>
-        <p class="mt-3">
-          Encontrá tu mejor versión con nosotros.
-        </p>
-      </div>
+      <div class="footer-col brand">
+        <h4 class="marca">EVO<span>.</span></h4>
+        <p>Potenciamos tu entrenamiento.</p>
+        <div class="redes">
+          <a href="https://www.facebook.com/EvoClubOtraVida/" target="_blank">
+            <img src="images/logo-facebook.svg" alt="Facebook" class="logo" style="width: 40px" />
+          </a>
+          <a href="https://www.instagram.com/evogimnasio/" target="_blank">
+            <img src="images/logo-instagram.svg" alt="Instagram" class="logo" style="width: 40px" />
+          </a>
+          
 
-      <!-- LINKS -->
-      <div class="col-md-4 mb-4">
-        <h5 class="text-center">Secciones</h5>
-
-        <div class="links mt-3">
-          <a routerLink="#home">Inicio</a>
-          <a routerLink="/planes">Planes</a>
-          <a routerLink="/sucursales">Sucursales</a>
-          <a routerLink="/contacto">Contacto</a>
         </div>
       </div>
 
-
-      <!-- REDES -->
-      <div class="col-md-4 mb-4 text-center">
-        <h5>Seguinos</h5>
-
-        <div class="redes mt-3">
-          <a href="https://www.instagram.com/evogimnasio/" target="_blank" class="icono-red">
-            <img src="images/logo-instagram.svg" alt="Instagram">
-          </a>
-
-          <a href="https://www.facebook.com/EvoClubOtraVida/" target="_blank" class="icono-red">
-            <img src="images/logo-facebook.svg" alt="Facebook">
-          </a>
+      <div class="footer-col">
+        <h5>Explorar</h5>
+        <div class="links-list">
+          <a [routerLink]="['/']">Inicio</a>
+          <a [routerLink]="['/']" fragment="planes">Planes</a>
+          <a [routerLink]="['/']" fragment="sucursales">Sucursales</a>
+          <a [routerLink]="['/contacto']">Contacto</a>
         </div>
       </div>
 
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <div class="contact-info">
+          <span><i class="bi bi-geo-alt"></i> Córdoba, Argentina</span>
+          <a href="mailto:info@evogym.com">info@evogym.com</a>
+          <a href="tel:+54351000000" class="tel">351 000-0000</a>
+        </div>
+      </div>
 
     </div>
 
-    <hr>
-
-    <div class="text-center copyright">
-      © 2026 Evo — Todos los derechos reservados
+    <div class="footer-bottom">
+      <p>© 2026 Evo — Todos los derechos reservados</p>
+      <div class="legal-links">
+        <a href="#">Términos</a>
+        <a href="#">Privacidad</a>
+      </div>
     </div>
   </div>
 </footer>
