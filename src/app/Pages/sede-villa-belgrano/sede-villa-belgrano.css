@@ -1,0 +1,85 @@
+.actividades {
+  background-image: url("assets/images/fondo-sucursal.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  position: relative;
+}
+
+/* capa oscura */
+.actividades::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.actividades .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* TITULO */
+.titulo {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.titulo span {
+  color: orange;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card-actividad {
+  flex: 1;
+  min-width: 300px;
+  height: 320px;
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card-actividad:hover {
+  transform: scale(1.03);
+}
+
+/* OVERLAY TEXTO */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
+  color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.overlay h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.overlay p {
+  font-size: 0.95rem;
+}
+
+/* IMAGENES */
+.card1 {
+  background-image: url("assets/images/musculacion.jpg");
+}
+
+.card2 {
+  background-image: url("assets/images/adulto-fit.jpg");
+}
