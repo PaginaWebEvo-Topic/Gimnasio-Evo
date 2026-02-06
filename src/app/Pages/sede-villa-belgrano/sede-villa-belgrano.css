@@ -1,30 +1,108 @@
-.actividades {
-  background-image: url("assets/images/fondo-sucursal.jpg");
+.sucursal-detalle {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/images/villabelgrano.jpg');
   background-size: cover;
   background-position: center;
-  padding: 80px 0;
+  background-attachment: fixed;
   position: relative;
 }
 
-/* capa oscura */
-.actividades::before {
+.sucursal-detalle::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(226, 147, 0, 0.545) 0%,   /* NARANJA DIFUMINADO */
+    rgba(0,0,0,0.45) 35%,        /* transición */
+    rgba(0,0,0,0.75) 100%        /* oscuro abajo */
+  );
 }
 
-.actividades .container {
+
+.sucursal-detalle > * {
   position: relative;
   z-index: 2;
 }
 
-/* TITULO */
+/* HERO */
+.hero {
+  padding: 100px 0 60px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.hero span {
+  color: #0d4fa8;
+}
+
+/* BOTONES */
+.btn-evo {
+  background: orange;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 40px;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+}
+
+.btn-info-evo {
+  background: #0d4fa8;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  margin-top: 15px;
+}
+
+/* TARJETA NARANJA */
+.info {
+  background: rgba(255, 140, 0, 0.92);
+  border-radius: 40px;
+  padding: 40px;
+  color: white;
+  margin-bottom: 80px;
+}
+
+/* PROFES */
+.profes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.profe img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profe span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* ACTIVIDADES */
+.actividades {
+  padding-bottom: 120px;
+}
+
 .titulo {
   color: white;
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .titulo span {
@@ -33,14 +111,12 @@
 
 /* CARDS */
 .cards {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
 }
 
 .card-actividad {
-  flex: 1;
-  min-width: 300px;
   height: 320px;
   border-radius: 25px;
   background-size: cover;
@@ -51,35 +127,20 @@
 }
 
 .card-actividad:hover {
-  transform: scale(1.03);
+  transform: translateY(-8px);
 }
 
-/* OVERLAY TEXTO */
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
   color: white;
-  padding: 25px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.overlay h3 {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.overlay p {
-  font-size: 0.95rem;
-}
-
-/* IMAGENES */
-.card1 {
-  background-image: url("assets/images/musculacion.jpg");
-}
-
-.card2 {
-  background-image: url("assets/images/adulto-fit.jpg");
-}
+/* IMÁGENES */
+.card1 { background-image: url("/images/fondobicis.jpg"); }
+.card2 { background-image: url("/images/adultofit.jpg"); }
