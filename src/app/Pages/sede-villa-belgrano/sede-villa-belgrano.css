@@ -149,3 +149,15 @@
 .container{
   width: 50%;
 }
+
+.beneficios {
+  list-style: none;   /* saca el circulito */
+  padding-left: 0;    /* quita el espacio de la izquierda */
+}
+
+.beneficios li {
+  display: flex;
+  align-items: center;
+  gap: 8px;           /* espacio entre check y texto */
+  margin-bottom: 10px;
+}
