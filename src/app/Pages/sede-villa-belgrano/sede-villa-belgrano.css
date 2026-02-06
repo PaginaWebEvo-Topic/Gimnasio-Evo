@@ -144,3 +144,9 @@
 /* IMÁGENES */
 .card1 { background-image: url("/images/fondobicis.jpg"); }
 .card2 { background-image: url("/images/adultofit.jpg"); }
+
+
+/*para que no se vean tan anchas las cards*/
+.container{
+  width: 50%;
+}
