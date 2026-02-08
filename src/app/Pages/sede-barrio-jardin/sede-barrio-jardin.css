@@ -59,6 +59,11 @@
   margin-top: 20px;
   cursor: pointer;
 }
+.btn-evo:hover{
+  font-weight: bold;
+  color: #0d4fa8;
+  text-shadow: 0.5px 0 0 currentColor;
+}
 
 .btn-info-evo {
   background: #0d4fa8;
@@ -69,6 +74,11 @@
   margin-top: 15px;
   cursor: pointer;
 }
+.btn-info-evo:hover{
+  color: orange;
+  text-shadow: 0.5px 0 0 currentColor;
+}
+
 
 /* TARJETA NARANJA */
 .info {
