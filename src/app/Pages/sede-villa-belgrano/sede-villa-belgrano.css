@@ -7,7 +7,7 @@
 .sucursal-detalle {
   width: 100%;
   min-height: 100vh;
-  background-image: url('/images/villabelgrano.jpg');
+  background-image: url('/assets/images/villabelgrano.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -158,8 +158,8 @@
 }
 
 /* IMÁGENES DE FONDO CARDS */
-.card1 { background-image: url("/images/fondobicis.jpg"); }
-.card2 { background-image: url("/images/adultofit.jpg"); }
+.card1 { background-image: url("/assets/images/fondobicis.jpg"); }
+.card2 { background-image: url("/assets/images/adultofit.jpg"); }
 
 /* BENEFICIOS */
 .beneficios {
