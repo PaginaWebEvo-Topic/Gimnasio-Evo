@@ -1,3 +1,7 @@
+/* CONTENEDOR PROPIO (NO TOCA BOOTSTRAP) */
+.evo-container {
+  max-width: 1000px;
+}
 .sucursal-detalle {
   width: 100%;
   min-height: 100vh;
@@ -14,11 +18,11 @@
   inset: 0;
   z-index: 1;
 
-  background: linear-gradient(
+    background: linear-gradient(
     to bottom,
-    rgba(226, 147, 0, 0.545) 0%,   /* NARANJA DIFUMINADO */
-    rgba(0,0,0,0.45) 35%,        /* transición */
-    rgba(0,0,0,0.75) 100%        /* oscuro abajo */
+    rgba(226, 147, 0, 0.5) 0%,
+    rgba(0,0,0,0.45) 15%,
+    rgba(0,0,0,0.75) 100%       /* oscuro abajo */
   );
 }
 
@@ -35,8 +39,9 @@
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: clamp(2.2rem, 8vw, 3.5rem);
   font-weight: 800;
+  line-height: 1.1;
 }
 
 .hero span {
@@ -52,6 +57,7 @@
   font-weight: bold;
   color: white;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .btn-info-evo {
@@ -61,6 +67,7 @@
   border-radius: 30px;
   color: white;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 /* TARJETA NARANJA */
@@ -101,8 +108,7 @@
   color: white;
   font-size: 3rem;
   font-weight: 800;
-  margin-bottom: 40px;
-  text-align: center;
+  margin-bottom: 40px
 }
 
 .titulo span {
@@ -143,4 +149,85 @@
 
 /* IMÁGENES */
 .card1 { background-image: url("/images/fondobicis.jpg"); }
-.card2 { background-image: url("/images/profebrian.jpg");}
+.card2 { background-image: url("/images/profebrian.jpg"); }
+
+/* BENEFICIOS */
+.beneficios {
+  list-style: none;
+  padding-left: 0;
+}
+
+.beneficios li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+/* CHECKS */
+.beneficios img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* IMÁGENES RESPONSIVE GENERALES */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* MOBILE AJUSTES */
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 70px 0 40px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .info {
+    padding: 25px;
+    border-radius: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+  }
+
+  .info .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .profes {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .profe img {
+    margin-top: 20px;
+    width: 110px;
+    height: 110px;
+  }
+
+}
+@media (max-width: 700px) {
+
+  .cards {
+    grid-template-columns: 1fr; /* UNA SOLA */
+  }
+
+  .card-actividad {
+    height: 360px; /* un poco más alta para impacto */
+  }
+
+}
