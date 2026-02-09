@@ -159,7 +159,10 @@
 
 /* IMÁGENES */
 .card1 { background-image: url("/assets/images/fondobicis.jpg"); }
-.card2 { background-image: url("/assets/images/profebrian.jpg"); }
+.card2 { 
+  background-image:url("/assets/images/profebrian.jpg");
+  background-position: center 40%;
+}
 
 /* BENEFICIOS */
 .beneficios {
