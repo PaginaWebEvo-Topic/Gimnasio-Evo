@@ -158,9 +158,9 @@
 }
 
 /* IMÁGENES */
-.card1 { background-image: url("/assets/images/fondobicis.jpg"); }
+.card1 { background-image: url("/assets/images/sala-de-musculacion.jpg"); }
 .card2 { 
-  background-image:url("/assets/images/profe-fede.jpg");
+  background-image:url("/assets/images/evo-personal.jpg");
   background-position: center 40%;
 }
 

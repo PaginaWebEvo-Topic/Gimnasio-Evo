@@ -156,11 +156,11 @@
 }
 
 /* IMÁGENES */
-.card1 { background-image: url("/assets/images/fondobicis.jpg"); }
-.card2 { background-image: url("/assets/images/adultofit.jpg");}
-.card3 { background-image: url("/assets/images/fondobicis.jpg");}
-.card4 { background-image: url("/assets/images/adultofit.jpg");}
-.card5 { background-image: url("/assets/images/adultofit.jpg");}
+.card1 { background-image: url("/assets/images/sala-de-musculacion.jpg"); }
+.card2 { background-image: url("/assets/images/gap.jpg");}
+.card3 { background-image: url("/assets/images/hiit.jpg");}
+.card4 { background-image: url("/assets/images/funcional.jpg");}
+.card5 { background-image: url("/assets/images/zumba.png");}
 
 /* BENEFICIOS */
 .beneficios {
