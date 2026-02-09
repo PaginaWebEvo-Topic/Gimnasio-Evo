@@ -548,7 +548,14 @@
   flex-grow: 1;
 }
 
-/* Botón siempre abajo */
+/* Botón siempre abajo */ 
 .plan-card .btn {
   margin-top: auto;
+}
+
+
+@media (max-width: 480px) {
+  .home {
+    background-position: center; 
+  }
 }
