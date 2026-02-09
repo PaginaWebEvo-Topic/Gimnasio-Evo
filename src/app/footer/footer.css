@@ -137,22 +137,41 @@
 }
 
 .sedes-footer {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 10px;
+  align-items: flex-start;
 }
+
+@media (max-width: 768px) {
+
+  .contact-info {
+    align-items: center;
+  }
+
+  .sedes-footer {
+    align-items: center;
+    width: 100%;
+  }
+
+  .sedes-footer a {
+    justify-content: center;
+    margin: 0 auto;   /* ESTA es la clave real */
+  }
+}
+
+
 
 .sedes-footer a {
   text-decoration: none;
   color: white;
   font-size: 0.95rem;
-  display: flex;
+  display: flex;  
   align-items: center;
   gap: 6px;
   opacity: 0.9;
   transition: 0.2s;
+  width: auto;     
 }
+
+
 
 .sedes-footer a:hover {
   opacity: 1;
