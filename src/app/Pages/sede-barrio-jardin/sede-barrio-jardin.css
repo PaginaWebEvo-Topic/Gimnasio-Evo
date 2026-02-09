@@ -1,4 +1,4 @@
-/* CONTENEDOR PROPIO (NO TOCA BOOTSTRAP) */
+
 .evo-container {
   max-width: 1000px
 }
@@ -160,7 +160,7 @@
 /* IMÁGENES */
 .card1 { background-image: url("/assets/images/fondobicis.jpg"); }
 .card2 { 
-  background-image:url("/assets/images/profebrian.jpg");
+  background-image:url("/assets/images/profe-fede.jpg");
   background-position: center 40%;
 }
 
@@ -236,11 +236,11 @@ img {
 @media (max-width: 700px) {
 
   .cards {
-    grid-template-columns: 1fr; /* UNA SOLA */
+    grid-template-columns: 1fr;
   }
 
   .card-actividad {
-    height: 360px; /* un poco más alta para impacto */
+    height: 360px; 
   }
 
 }
