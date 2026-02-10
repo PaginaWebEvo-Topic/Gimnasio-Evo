@@ -36,7 +36,6 @@
                 "output": "/"
               }
             ],
-
             "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css", "src/styles.css"],
             "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
           },
@@ -76,6 +75,15 @@
           },
           "defaultConfiguration": "development"
         },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "browserTarget": "gimnasioevo:build:production",
+            "serverTarget": "gimnasioevo:server:production",
+            "routesFile": "routes.txt"
+          }
+        },
+
         "test": {
           "builder": "@angular/build:unit-test"
         }
