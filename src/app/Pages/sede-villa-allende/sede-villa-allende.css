@@ -124,12 +124,6 @@
 }
 
 /* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-
 .card-actividad {
   height: 320px;
   border-radius: 25px;
@@ -233,12 +227,8 @@ img {
 }
 @media (max-width: 700px) {
 
-  .cards {
-    grid-template-columns: 1fr; /* UNA SOLA */
-  }
-
   .card-actividad {
-    height: 360px; /* un poco más alta para impacto */
+    height: 360px;
   }
 
 }

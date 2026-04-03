@@ -118,7 +118,8 @@
   color: white;
   font-size: 3rem;
   font-weight: 800;
-  margin-bottom: 40px
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .titulo span {
@@ -126,12 +127,6 @@
 }
 
 /* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-
 .card-actividad {
   height: 320px;
   border-radius: 25px;
@@ -160,9 +155,10 @@
 /* IMÁGENES */
 .card1 { background-image: url("/assets/images/sala-de-musculacion.jpg"); }
 .card2 { 
-  background-image:url("/assets/images/evo-personal.jpg");
+  background-image: url("/assets/images/evo-personal.jpg");
   background-position: center 40%;
 }
+.card3 { background-image: url("/assets/images/adulto-fit.png"); }
 
 /* BENEFICIOS */
 .beneficios {
@@ -235,12 +231,8 @@ img {
 }
 @media (max-width: 700px) {
 
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
   .card-actividad {
-    height: 360px; 
+    height: 360px;
   }
 
 }
