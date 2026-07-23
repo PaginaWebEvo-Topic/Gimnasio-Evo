@@ -11,6 +11,15 @@
 npm-debug.log
 yarn-error.log
 
+# Environment and secrets
+.env
+.env.*
+secrets.json
+credentials.json
+*.key
+*.pem
+*.crt
+
 # IDEs and editors
 .idea/
 .project
